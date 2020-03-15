@@ -4,23 +4,36 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+
+
 * {
 	box-sizing: border-box;
 }
 
 html, body {
-    width: 100%;
-    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(.38,-0.64,.88,.97);
 }
 
+
+
+
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Baloo Chettan 2', cursive;
     text-align: center;
     background: rgba(235, 235, 235, 0.9);
 }
 
 header {
     padding: 15px 5px 5px;
+}
+
+
+.fa {
+    color: black;
+    padding-right: 10px;
 }
 
 .header-inner-container {
@@ -30,7 +43,7 @@ header {
 
 header h1 {
     font-size: 1.25em;
-    color: rgba(50, 50, 50, 0.9);
+    color: rgba(241, 241, 241, 0.9);
     margin-top: 35px;
 }
 
@@ -92,12 +105,17 @@ header h1 {
     border: 1px solid rgba(50, 50, 50, 0.3);
     transition: .4s ease-out;
     overflow: hidden;
+    box-shadow: 2px 11px 25px -7px rgba(0,0,0,0.6);
+
 }
 
 .card-img {
     width: 95px;
     margin: 10px 15px auto 10px;
     border-radius: 50%;
+    /*border: 2px solid black;*/
+    box-shadow: 2px 11px 25px -7px rgba(0,0,0,0.6);
+
 }
 
 .card-info-container {
